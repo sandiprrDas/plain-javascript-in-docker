@@ -1,7 +1,20 @@
-﻿<!doctype html>
+<!doctype html>
 <html>
-  
-  <body>
-           <h1>Home</h1>
-  </body>
+<head>
+<script>
+function add(){
+var a,b,c;
+a=Number(document.getElementById("Text1").value);
+b=Number(document.getElementById("Text2").value);
+c= a + b;
+document.getElementById("txtresult").value= c;
+}
+</script>
+</head>
+<body>
+Enter the First number : <input id="Text1">
+Enter the Second number: <input id="Text2">
+<button onclick="add()">Add</button>
+<input id="txtresult">
+</body>
 </html>
